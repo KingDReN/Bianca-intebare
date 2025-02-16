@@ -3,17 +3,17 @@
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
-    if (option === 'Da') {
+    if (option === 'da') {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
         });
-    } else if (option === 'Nu') {
+    } else if (option === 'nu') {
         // Change text on the "No" button to "You sure?"
         document.getElementById('nu-button').innerText = 'Esti sigura?'; 
         // Increase font size of "Yes" button
-        var yesButton = document.getElementById('Da-button');
+        var yesButton = document.getElementById('da-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
         yesButton.style.fontSize = newSize + 'px';
